@@ -1,0 +1,12 @@
+tunnel: your-tunnel-id
+credentials-file: /home/pi/.cloudflared/credentials.json
+
+ingress:
+  - hostname: cv.studio-010.com
+    service: http://localhost:5174
+    originRequest:
+      noTLSVerify: true
+      connectTimeout: 30s
+      headers:
+        Host: cv.studio-010.com
+  - service: http_status:404 
