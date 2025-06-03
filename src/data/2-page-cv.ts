@@ -53,9 +53,10 @@ export const cvData: CV = {
       competences: [
         { nom: "Docker", niveau: 5 },
         { nom: "Git", niveau: 5 },
+        { nom: "Grafana", niveau: 4 },
         { nom: "Proxmox", niveau: 3 },
         { nom: "RabbitMQ", niveau: 3 },
-        { nom: "Grafana", niveau: 4 }
+        { nom: "Keycloak", niveau: 3 }
       ]
     },
     {
@@ -80,10 +81,10 @@ export const cvData: CV = {
       missions: [
         "Développement de la messagerie interne (Web Sockets)",
         "Développement du module critique de la facturation (intégration avec Stripe)",
-        "Communication et travail d'équipe en full remote",
-        "Mise en place d'un système de suivi des tâches"
+        "Authentification sécurisée via Keycloak",
+        "Mise en place accessibilité (notamment pour les personnes malvoyantes)"
       ],
-      technos: ["Kotlin", "Typescript", "Quarkus", "Angular", "PostgreSQL", "Flyway"]
+      technos: ["Kotlin", "Typescript", "Quarkus", "Angular", "PostgreSQL", "Flyway", "Keycloak"]
     },
     {
       titre: "Chef de projet informatique & informatique industrielle",
@@ -97,9 +98,9 @@ export const cvData: CV = {
         "Intégration et maintenance d'ERP et outils de gestion de projet",
         "Développement d'applications web et industrielles",
         "Réalisation de plateformes de démonstration industrielles",
-        "Management de projets et d'équipes, en charge du respect coûts/délais/qualité"
+        "Remontée d'information via RabbitMQ notamment"
       ],
-      technos: ["Java", "Typescript", "VB.NET", "JavaScript", "Spring Boot", "Angular", "PostgreSQL", "Docker", "Python", "OpenCV", "InfluxDB", "Grafana"]
+      technos: ["Java", "Typescript", "VB.NET", "JavaScript", "Spring Boot", "Angular", "PostgreSQL", "Docker", "Python", "OpenCV", "InfluxDB", "Grafana", "RabbitMQ"]
     },
     {
       titre: "Développeur full stack",

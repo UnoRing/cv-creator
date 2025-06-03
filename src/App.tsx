@@ -31,20 +31,22 @@ export default function App() {
   return (
     <div className="min-h-screen bg-gray-100">
       {/* Format selection */}
-      <div className="max-w-5xl mx-auto pt-8 px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-end space-x-4 mb-8">
-          <button
-            onClick={() => setIsTwoPage(!isTwoPage)}
-            className="px-4 py-2 rounded-full bg-white hover:bg-gray-50 transition-colors"
-          >
-            {isTwoPage ? 'Version 1 page' : 'Version 2 pages'}
-          </button>
-          <button
-            onClick={handlePdfDownload}
-            className="px-4 py-2 rounded-full bg-white hover:bg-gray-50 transition-colors"
-          >
-            Télécharger PDF
-          </button>
+      <div className="toggle-container">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex justify-end space-x-4">
+            <button
+              onClick={() => setIsTwoPage(!isTwoPage)}
+              className="px-4 py-2 rounded-full bg-white hover:bg-gray-50 transition-colors shadow-sm"
+            >
+              {isTwoPage ? 'Version 1 page' : 'Version 2 pages'}
+            </button>
+            <button
+              onClick={handlePdfDownload}
+              className="px-4 py-2 rounded-full bg-white hover:bg-gray-50 transition-colors shadow-sm"
+            >
+              Télécharger PDF
+            </button>
+          </div>
         </div>
       </div>
 
